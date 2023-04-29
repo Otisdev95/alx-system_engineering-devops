@@ -8,7 +8,6 @@ then
 	then
 		echo "school file does not exist"
 	else
-	then
 		echo "school file is empty"
 	fi
 
