@@ -3,7 +3,8 @@
 # The exact format must be OCCURENCE_NUMBER IP HTTP_CODE and in list format
 # Ordered from the greatest to the lowest number of occurrences
 
-if test -f $(apache-access.log)
+file="apache-access.log"
+if test -f $file
 then
-	awk '{print $1,$9}' $(apache-access.log) | sort | uniq -c | sort -gr
+	awk '{print $1, $9}' $file | sort | uniq -c | sort -gr
 fi
